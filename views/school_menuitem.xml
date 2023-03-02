@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Top menu item -->
+    <menuitem name="School"
+        id="menu_school"
+        groups="base.group_user"
+        sequence="4">
+        <menuitem id="menu_school_subject" name="Subject" action="action_school_subject" groups="base.group_user" sequence="0"/>
+        <menuitem id="menu_school_student" name="Student" action="action_school_student" groups="base.group_user" sequence="1"/>
+        <menuitem id="menu_school_teacher" name="Teacher" action="action_school_teacher" groups="base.group_user" sequence="2"/>
+    </menuitem>
+</odoo>

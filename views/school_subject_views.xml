@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record id="view_school_subject_form" model="ir.ui.view">
+            <field name="name">school_subject_form</field>
+            <field name="model">school.subject</field>
+            <field name="arch" type="xml">
+                <form string="School Subject">
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="name"/>
+                                <field name="credits"/>
+                            </group>
+                            <group>
+                                <field name="max_students"/>
+                                <field name="teacher_id"/>
+                            </group>
+                            <notebook>
+                                <page name="student" string="Students">
+                                    <field name="student_ids">
+                                        <tree editable="bottom">
+                                            <field name="name"/>
+                                            <field name="birth_date"/>
+                                            <field name="age"/>
+                                            <field name="final_exam_grade"/>
+                                        </tree>
+                                    </field>
+                                </page>
+                            </notebook>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="view_school_subject_list" model="ir.ui.view">
+            <field name="name">school.subject.list</field>
+            <field name="model">school.subject</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="name"/>
+                    <field name="credits"/>
+                    <field name="max_students"/>
+                    <field name="teacher_id"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_school_subject_search" model="ir.ui.view">
+            <field name="name">school.subject.search</field>
+            <field name="model">school.subject</field>
+            <field name="arch" type="xml">
+                <search string="School Subject">
+                    <field name="name" filter_domain="[('name','ilike',self)]" string="Name"/>
+                    <field name="credits" filter_domain="[('credits','ilike',self)]" string="Credits"/>
+                    <field name="max_students" filter_domain="[('max_students','ilike',self)]" string="Max Students"/>
+                    <field name="teacher_id" filter_domain="[('teacher_id','ilike',self)]" string="Teacher"/>
+                </search>
+            </field>
+        </record>
+
+        <record id="action_school_subject" model="ir.actions.act_window">
+            <field name="name">Subject</field>
+            <field name="res_model">school.subject</field>
+            <field name="view_mode">tree,form</field>
+            <field name="search_view_id" ref="view_school_subject_search"/>
+            <field name="view_id" ref="view_school_subject_list"/>
+        </record>
+    </data>
+</odoo>
