@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'school',
-    'description': "This is module manager school and add subjects, students and teachers",
+    'description': "This is a module of Odoo V16 for manager school and add subjects, students and teachers",
     'version': "1.0.0",
     'depends': ['base'],
     'data': [
