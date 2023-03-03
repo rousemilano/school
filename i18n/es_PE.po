@@ -1,0 +1,197 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* school
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 16.0-20230301\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-03 04:05+0000\n"
+"PO-Revision-Date: 2023-03-03 04:05+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_subject__active
+msgid "Active"
+msgstr "Activado"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_student__age
+#: model_terms:ir.ui.view,arch_db:school.view_school_student_search
+msgid "Age"
+msgstr "Edad"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_student__birth_date
+#: model_terms:ir.ui.view,arch_db:school.view_school_student_search
+msgid "Birth Date"
+msgstr "Fecha de nacimiento"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_student__create_uid
+#: model:ir.model.fields,field_description:school.field_school_subject__create_uid
+#: model:ir.model.fields,field_description:school.field_school_subject_line__create_uid
+#: model:ir.model.fields,field_description:school.field_school_teacher__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_student__create_date
+#: model:ir.model.fields,field_description:school.field_school_subject__create_date
+#: model:ir.model.fields,field_description:school.field_school_subject_line__create_date
+#: model:ir.model.fields,field_description:school.field_school_teacher__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_subject__credits
+#: model:ir.model.fields,field_description:school.field_school_subject_line__credits
+#: model_terms:ir.ui.view,arch_db:school.view_school_subject_search
+msgid "Credits"
+msgstr "Créditos"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_student__display_name
+#: model:ir.model.fields,field_description:school.field_school_subject__display_name
+#: model:ir.model.fields,field_description:school.field_school_subject_line__display_name
+#: model:ir.model.fields,field_description:school.field_school_teacher__display_name
+msgid "Display Name"
+msgstr "Mostrar nombre"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_student__final_exam_grade
+#: model_terms:ir.ui.view,arch_db:school.view_school_student_search
+msgid "Final Exam Grade"
+msgstr "Calificación del examén final"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_student__id
+#: model:ir.model.fields,field_description:school.field_school_subject__id
+#: model:ir.model.fields,field_description:school.field_school_subject_line__id
+#: model:ir.model.fields,field_description:school.field_school_teacher__id
+msgid "ID"
+msgstr "ID"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_student____last_update
+#: model:ir.model.fields,field_description:school.field_school_subject____last_update
+#: model:ir.model.fields,field_description:school.field_school_subject_line____last_update
+#: model:ir.model.fields,field_description:school.field_school_teacher____last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_student__write_uid
+#: model:ir.model.fields,field_description:school.field_school_subject__write_uid
+#: model:ir.model.fields,field_description:school.field_school_subject_line__write_uid
+#: model:ir.model.fields,field_description:school.field_school_teacher__write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_student__write_date
+#: model:ir.model.fields,field_description:school.field_school_subject__write_date
+#: model:ir.model.fields,field_description:school.field_school_subject_line__write_date
+#: model:ir.model.fields,field_description:school.field_school_teacher__write_date
+msgid "Last Updated on"
+msgstr "Última actualización en"
+
+#. module: school
+#: model_terms:ir.ui.view,arch_db:school.view_school_subject_search
+msgid "Max Students"
+msgstr "Cupos disponibles"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_student__name
+#: model:ir.model.fields,field_description:school.field_school_subject__name
+#: model:ir.model.fields,field_description:school.field_school_subject_line__name
+#: model:ir.model.fields,field_description:school.field_school_teacher__name
+#: model_terms:ir.ui.view,arch_db:school.view_school_student_search
+#: model_terms:ir.ui.view,arch_db:school.view_school_subject_search
+#: model_terms:ir.ui.view,arch_db:school.view_school_teacher_search
+msgid "Name"
+msgstr "Nombre"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_teacher__profile
+#: model_terms:ir.ui.view,arch_db:school.view_school_teacher_search
+msgid "Profile"
+msgstr "Perfil"
+
+#. module: school
+#: model:ir.ui.menu,name:school.menu_school
+msgid "School"
+msgstr "Escuela"
+
+#. module: school
+#: model:ir.model,name:school.model_school_student
+#: model_terms:ir.ui.view,arch_db:school.view_school_student_form
+#: model_terms:ir.ui.view,arch_db:school.view_school_student_search
+msgid "School Student"
+msgstr "Estudiante en escuela"
+
+#. module: school
+#: model:ir.model,name:school.model_school_subject
+#: model_terms:ir.ui.view,arch_db:school.view_school_subject_form
+#: model_terms:ir.ui.view,arch_db:school.view_school_subject_search
+msgid "School Subject"
+msgstr "Asignatura en escuela"
+
+#. module: school
+#: model:ir.model,name:school.model_school_subject_line
+msgid "School Subject Line"
+msgstr "Linea de asignatura en escuela"
+
+#. module: school
+#: model:ir.model,name:school.model_school_teacher
+#: model_terms:ir.ui.view,arch_db:school.view_school_teacher_form
+#: model_terms:ir.ui.view,arch_db:school.view_school_teacher_search
+msgid "School Teacher"
+msgstr "Maestro en escuela"
+
+#. module: school
+#: model:ir.actions.act_window,name:school.action_school_student
+#: model:ir.ui.menu,name:school.menu_school_student
+msgid "Student"
+msgstr "Estudiante"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_subject__student_ids
+#: model_terms:ir.ui.view,arch_db:school.view_school_subject_form
+msgid "Students"
+msgstr "Estudiantes"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_subject__max_students
+#: model:ir.model.fields,field_description:school.field_school_subject_line__max_students
+msgid "Students Max"
+msgstr "Cupos disponibles"
+
+#. module: school
+#: model:ir.actions.act_window,name:school.action_school_subject
+#: model:ir.ui.menu,name:school.menu_school_subject
+msgid "Subject"
+msgstr "Asignatura"
+
+#. module: school
+#: model:ir.model.fields,field_description:school.field_school_student__subject_ids
+#: model:ir.model.fields,field_description:school.field_school_subject_line__subject_id
+#: model:ir.model.fields,field_description:school.field_school_teacher__subject_ids
+#: model_terms:ir.ui.view,arch_db:school.view_school_student_form
+#: model_terms:ir.ui.view,arch_db:school.view_school_teacher_form
+msgid "Subjects"
+msgstr "Asignaturas"
+
+#. module: school
+#: model:ir.actions.act_window,name:school.action_school_teacher
+#: model:ir.model.fields,field_description:school.field_school_subject__teacher_id
+#: model:ir.model.fields,field_description:school.field_school_subject_line__teacher_id
+#: model:ir.ui.menu,name:school.menu_school_teacher
+#: model_terms:ir.ui.view,arch_db:school.view_school_subject_search
+msgid "Teacher"
+msgstr "Maestro"
