@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from odoo import api, fields, models
-
-from odoo.exceptions import UserError
+from odoo import fields, models
 
 
 class SchoolSubject(models.Model):
