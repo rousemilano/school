@@ -2,17 +2,19 @@
 
 from odoo import api, fields, models
 
+from odoo.exceptions import UserError
+
 
 class SchoolSubject(models.Model):
     _name = "school.subject"
     _description = "School Subject"
 
-    name = fields.Char(string="Name")
-    credits = fields.Integer(string="Credits")
+    name = fields.Char(string="Name", required=True)
+    credits = fields.Integer(string="Credits", required=True)
     max_students = fields.Integer(string="Students Max")
     active = fields.Boolean(string="Active", default=True)
-    student_ids = fields.Many2many(string="Students", comodel_name="school.student", compute="")
-    teacher_id = fields.Many2one(string="Teacher", comodel_name="school.teacher")
+    student_ids = fields.Many2many(string="Students", comodel_name="school.student", readonly=True)
+    teacher_id = fields.Many2one(string="Teacher", comodel_name="school.teacher", required=True)
 
 
 class SchoolSubjectLine(models.Model):

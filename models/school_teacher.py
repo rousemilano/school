@@ -7,7 +7,7 @@ class SchoolTeacher(models.Model):
     _name = "school.teacher"
     _description = "School Teacher"
 
-    name = fields.Char(string="Name")
-    profile = fields.Text(string="Profile")
+    name = fields.Char(string="Name", required=True)
+    profile = fields.Text(string="Profile", required=True)
     subject_ids = fields.One2many("school.subject.line", "teacher_id", string="Subjects")
 
